@@ -1,0 +1,26 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# YOLO outputs
+runs/
+
+# Models
+*.pt
+
+# Videos
+*.mp4
+
+# Images (optional if they're sample/test files)
+test_images/
+
+# Logs
+*.log
