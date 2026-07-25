@@ -1,0 +1,23 @@
+{
+    "incident_id": "20260725_174832_262594",
+    "camera_id": "camera-01",
+    "worker_id": 1066,
+    "timestamp": "2026-07-25T17:48:32.262594+00:00",
+    "missing_ppe": [
+        "helmet",
+        "safety-vest",
+        "gloves",
+        "shoes"
+    ],
+    "detected_ppe": [],
+    "risk_score": 85,
+    "risk_level": "CRITICAL",
+    "compliance_percentage": 0.0,
+    "is_compliant": false,
+    "requires_alert": true,
+    "snapshot_filename": "20260725_174832_262594.jpg",
+    "snapshot_path": "/Users/souravkumar/Downloads/Human_Safety/backend/data/snapshots/20260725_174832_262594.jpg",
+    "status": "OPEN",
+    "created_at": "2026-07-25T17:48:32.262594+00:00",
+    "updated_at": "2026-07-25T17:48:32.262594+00:00"
+}

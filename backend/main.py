@@ -8,13 +8,11 @@ from api.incidents import router as incidents_router
 
 
 app = FastAPI(
-    title="HumanShield AI",
-    description=(
-        "Real-time PPE compliance and "
-        "industrial safety monitoring"
-    ),
+    title="HumanShield AI API",
+    description="PPE Compliance and Safety Monitoring Backend",
     version="1.0.0",
 )
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -27,16 +25,16 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+app.include_router(health_router)
 app.include_router(camera_router)
 app.include_router(incidents_router)
 app.include_router(dashboard_router)
-app.include_router(health_router)
 
 
 @app.get("/")
-def root() -> dict:
+def root():
     return {
-        "project": "HumanShield AI",
+        "service": "HumanShield AI",
         "status": "running",
-        "docs": "/docs",
     }
