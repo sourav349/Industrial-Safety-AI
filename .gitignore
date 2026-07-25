@@ -24,3 +24,10 @@ test_images/
 
 # Logs
 *.log
+# Runtime generated data
+backend/data/incidents/
+backend/data/snapshots/
+
+# Keep the folders (optional)
+!backend/data/incidents/.gitkeep
+!backend/data/snapshots/.gitkeep
